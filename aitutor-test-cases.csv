@@ -1,0 +1,1145 @@
+﻿Scenario ID;Scenario Category Type;"Go Live-
+Yes/No";Release date;Description;Priority;iOS_Steps to Reproduce;iOS_Expected Result;iOS_Actual Results;iOS_Test Status;iOS_Test RTM;Scenario Review by Product/Engg ;Planned Execution Start Date;Planned Execution End Date;Actual Execution Start Date;Actual Execution End Date;Integration_Test Status_iOS;Integration_Defect;Defect ID;Comments;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: Entry point;;;Enable AI Tutor : Entry point for My Course ;Low;"Precondition: Test-case is valid for demo app
+1. Launch application and login
+2. Tap on  open AB test Feature button from bottom and Enable for Show AI Tutor
+3. Open any channel and Naviagate to My Course Tab
+4. Verify showAiTutor value in Channel details json
+5. Verify 'Ask AI Tutor For Help' section below Course details Tile 
+6. Repeat steps 2 to 5 authorized and unautherized user";"1. Application is launched
+2. Show AI feature should Enabled
+3. Channel is opened with My Course Tab
+4. 'showAiTutor' value is true in Channel details json 
+5. 'Ask AI Tutor For Help' section is displayed
+6.  See E.R. 2-5";;;CHAN-12743/not applicable;;;;;;;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: Entry point;;;Enable AI Tutor : Entry point for AI Tutor Tab ;Low;"Precondition: Test-case is valid for demo app
+1. Launch application and login
+2. Tap on  open AB test Feature button from bottom and Enable for Show AI Tutor
+3. Open any channel and Naviagate to AI Tutor Tab to the right 
+4. Verify showAiTutor value in Channel details json
+5. Verify 'Ask AI Tutor' Tab 
+6. Repeat steps 2 to 5 authorized and unautherized user";"1. Application is launched
+2. Show AI feature should Enabled
+3. 'showAiTutor' value is true in Channel details json 
+4. Navigate to Ask AI Tutor to the right properly
+5. 'Ask AI Tutor' Tab is displayed
+6.  See E.R. 2-5";;;CHAN-12743/not applicable;;;;;;;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: Entry point;;;Disable AI Tutor : Entry point for My Course ;Low;"Precondition: Test-case is valid for demo app
+1. Launch application and login
+2. Tap on  open AB test Feature button from bottom and Disable for Show AI Tutor
+3. Open any channel and Naviagate to My Course Tab
+4. Verify showAiTutor value in Channel details json
+5. Verify 'Ask AI Tutor For Help' section below Course details Tile 
+6. Repeat steps 2 to 5 authorized and unautherized user";" 1. Application is launched
+2. Show AI feature should Enabled 
+3. Channel is opened with My Course Tab
+4. 'showAiTutor' value is false in Channel details json
+5. 'Ask AI Tutor For Help' section is not displayed
+6.  See E.R. 2-5";;;CHAN-12743/not applicable;;;;;;;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: Entry point;;;Disable AI Tutor : Entry point for AI Tutor Tab ;Low;"Precondition: Test-case is valid for demo app
+1. Launch application and login
+2. Tap on  open AB test Feature button from bottom and Disable for Show AI Tutor
+3. Verify showAiTutor value in Channel details json
+4. Open any channel  
+5. Verify 'Ask AI Tutor' Tab 
+6. Repeat steps 2 to 5 authorized and unautherized user";" 1. Application is launched
+2. Show AI feature should Enabled 
+3. Channel is displayed 
+4. 'showAiTutor' value is false in Channel details json 
+5. 'Ask AI Tutor' Tab is not displayed
+6.  See E.R. 2-5";;;CHAN-12743/not applicable;;;;;;;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: Entry point;;;Enable AI Tutor : Entry point for My Course and  Ask AI Tutor Tab;Low;"Precondition: Test-case is valid for demo app
+1. Launch application and login
+2. Tap on  open AB test Feature button from bottom and Disable for Show AI Tutor
+3. Open any IT PRO channel and Naviagate to My Course Tab
+4. Verify showAiTutor value in Channel details json
+5. Verify 'Ask AI Tutor For Help' section  below Course details Tile and 'Ask AI Tutor' Tab 
+6. Repeat steps 2 to 5 authorized and unautherized user";" 1. Application is launched
+2. Show AI feature should Enabled 
+3. Channel is opened with My Course Tab
+4. 'showAiTutor' value is false in Channel details json 
+5. 'Ask AI Tutor For Help' and  'Ask AI Tutor For Help' section section is not displayed
+6.  See E.R. 2-5
+";;;CHAN-12743/not applicable;;;;;;;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario_AI tutor;[iOS] AI Tutor: send PLA when closing the AI Tutor component;;;[iOS] AI Tutor: send PLA when closing the AI Tutor component- My Course Tab;Medium;"Precondition: Demo app-open AB test Feature button from bottom and Enable for Show AI Tutor
+1. Launch application and login 
+3. Open Higher educational channel and Naviagate to My Course Tab
+4. Verify ""<AI Chat icon>+ Ask Ai Tutor for help ""
+5. Tap on  ""<AI Chat icon>+ Ask Ai Tutor for help "" section
+6. tap on Close icon ""x"" 
+7. Check in tracking tool triggered event Click Close Chatbot with id =674
+
+";"1. Application is launched
+2. Channel is opened with My Course Tab
+3. ""<AI Chat icon>+ Ask Ai Tutor for help ""  is displayed
+4. 'Ask AI Tutor For Help' section is displayed
+5. AI Tutor page is displayed
+6. Verify AI Tutor page is closed and nevagated to My course page .
+7. Verify event event Click Close Chatbot with id =674 with following details :
+event_action: ""Click Close Chatbot""
+event_category: ""Study Channels""
+event_label = ""X""
+event_value = open_duraction_seconds (0,1,2,3,4,5,6....)  how long the chat bot was opened (seconds)
+Other fields:
+channel_type, user_type, user_signed_in,
+search_term  = the last prompt user sent before closing
+channel_section = ""Higher Education""
+channel_flow = ""My course""
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+location_in_app = ""AI Tutor""  always for AI tutor related scenarios
+channel_flow = ""HW help""  always for AI tutor related scenarios
+initiate_point = reflect the active tab underneath the AI tutor component (""My Course, AI Tutor, Guided, Exam Prep etc"")
+";;Pass/Complete;"CHAN-13058
+CHAN-13287";;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario_AI tutor;[iOS] AI Tutor: send PLA when closing the AI Tutor component;;;[iOS] AI Tutor: send PLA when closing the AI Tutor component-AI Tutor Tab;Medium;"Precondition: Demo app-open AB test Feature button from bottom and Enable for Show AI Tutor
+1. Launch application and login 
+2. Open Higher educational channel 
+3. Tap on  AI Tutor Tab
+4.Tap on  ""<AI Chat icon>+ Ask Ai Tutor for help "" section
+5. tap on Close icon ""x"" 
+6. Verify Go to Console app / Mixpanel / Message status tool / GA and check triggered event Click Close Chatbot with id =674
+
+";"1. Application is launched
+2. Channel is opened 
+3.  AI Tutor page is displayed
+4.  AI Tutor popup is displayed 
+5. Verify AI Tutor page is closed 
+6. Verify event event Click Close Chatbot with id =674 with following details :
+event_action: ""Click Close Chatbot""
+event_category: ""Study Channels""
+event_label = ""X""
+event_value = open_duraction_seconds (0,1,2,3,4,5,6....)  how long the chat bot was opened (seconds)
+Other fields:
+channel_type, user_type, user_signed_in,
+search_term  = the last prompt user sent before closing
+channel_section = ""Higher Education""
+channel_flow = ""My course""
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+location_in_app = ""AI Tutor""  always for AI tutor related scenarios
+channel_flow = ""HW help""  always for AI tutor related scenarios
+initiate_point = reflect the active tab underneath the AI tutor component (""My Course, AI Tutor, Guided, Exam Prep etc"")
+ ";;Pass/Complete;"CHAN-13058
+CHAN-13287";;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario_AI tutor;[iOS] AI Tutor: send multiple PLA when opening the history page/item;;;"Event ""Open Chatbot History"" id (782) is sent after tap on See all link button from AI Tutor tab from channel page.";Medium;"Precondition: Demo app-open AB test Feature  Enabled
+and Chat history should avaialable for login user
+1. Launch application and login
+2. Open Higher Education channel 
+3. Tap on AI Tutor Tab 
+4. Tap on Chat History 'See all' link button 
+5. Check in tracking tool triggered event ""Interact Chatbot History"" with id =782
+";" 1. Application is launched
+2. Channel Page is displayed 
+3. AI Tutor tab page is opened 
+4. Chat History page is display
+5. Verify event event ""Interact Chatbot History"" with id =782 with following details :
+event_action: ""Interact Chatbot History""
+event_category: ""Study Channels""
+event_label = ""Open Chatbot History""
+Other fields:
+channel_type, user_type, user_signed_in,
+search_term =  the latest prompt sent by user before he open the history page / empty for feed
+subject, topic
+location_in_app = ""Chatbot History""
+channel_section = ""Higher Education""
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+location_in_app = ""AI Tutor""  always for AI tutor related scenarios
+channel_flow = ""HW help""  always for AI tutor related scenarios
+initiate_point = reflect the active tab underneath the AI tutor component (""My Course, AI Tutor, Guided, Exam Prep etc"")";;Pass/Complete;"CHAN-13053
+CHAN-13287
+CHAN-13659";;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario_AI tutor;[iOS] AI Tutor: send multiple PLA when opening the history page/item;;;"Event ""Open Chatbot History"" id (782) is sent after tap on open chat history icon from AI Tutor page";Medium;"Precondition: Demo app-open AB test Feature  Enabled and  Chat history should avaialable for login user
+1. Launch application and login
+2. Open Higher Education channel 
+3. Tap on AI Tutor Tab 
+4. Tap on  ""<AI Chat icon>+ Ask Ai Tutor for help "" section
+5. Tap on Chat History icon button from AI Tutor 
+6.Check in tracking tool triggered event Open Chatbot History with id =782
+";"1. Application is launched
+2. Channel Page is displayed 
+3. AI Tutor tab page is opened 
+4. AI Tutor page is display
+5. Chat History Page is displayed
+6. Verify event event Click Close Chatbot with id =782 with following details :
+event_action: ""Interact Chatbot History""
+event_category: ""Study Channels""
+event_label = ""Open Chatbot History""
+Other fields:
+channel_type, user_type, user_signed_in,
+search_term =  the latest prompt sent by user before he open the history page / empty for feed
+subject, topic
+location_in_app = ""Chatbot History""
+channel_section = ""Higher Education""
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+location_in_app = ""AI Tutor""  always for AI tutor related scenarios
+channel_flow = ""HW help""  always for AI tutor related scenarios
+initiate_point = reflect the active tab underneath the AI tutor component (""My Course, AI Tutor, Guided, Exam Prep etc"")";;Pass/Complete;"CHAN-13053
+CHAN-13287
+CHAN-13659";;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario_AI tutor;[iOS] AI Tutor: send multiple PLA when opening the history page/item;;;"Event ""Select Chat History "" id (782) is sent after tap on Chat history List items from Chat History section ";Medium;"Precondition: Demo app-open AB test Feature  Enabled and  Chat history should avaialable for login user
+1. Launch application and login
+2. Open Higher Education channel 
+3. Tap on AI Tutor Tab 
+4. Verify   ""Chat History "" section
+5. Tap on any Chat history list item 
+6. Check in tracking tool triggered event Select Chat History with id =782";"1. Application is launched 
+2. Channel Page is displayed 
+3. AI Tutor tab page is opened 
+4. Chat History section display with day wise history chat session
+5. Chat History session page details is displayed.
+6. Verify event event Click Close Chatbot with id =782 with following details :
+event_action: ""Interact Chatbot History""
+event_category: ""Study Channels""
+event_label = ""Select Chat History""
+Other fields:
+channel_type, user_type, user_signed_in,
+search_term =  the latest prompt sent by user before he open the history page / empty for feed
+subject, topic
+location_in_app = ""Chatbot History""
+channel_section = ""Higher Education""
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+location_in_app = ""AI Tutor""  always for AI tutor related scenarios
+channel_flow = ""HW help""  always for AI tutor related scenarios
+initiate_point = reflect the active tab underneath the AI tutor component (""My Course, AI Tutor, Guided, Exam Prep etc"")
+";;Pass/Complete;"CHAN-13053
+CHAN-13287";;;;;;;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario_AI tutor;[iOS] AI Tutor: send multiple PLA when opening the history page/item;;;"Event ""Select Chat History "" id (782) is sent after tap on history List item from Chat History Page";Medium;"Precondition: Demo app-open AB test Feature  Enabled  
+and Chat history should avaialable for login user
+1. Launch application and login
+2. Open Higher Education channel 
+3. Tap on AI Tutor Tab 
+4. Tap on  ""<AI Chat icon>+ Ask Ai Tutor for help "" section
+5. Tap on Chat History icon button from AI Tutor 
+6.Check in tracking tool triggered event Open Chatbot History with id =782
+";"1. Application is launched
+2. Channel Page is displayed 
+3. AI Tutor tab page is opened 
+4. AI Tutor page is display
+5. Chat History Page is displayed
+6. Verify event event Click Close Chatbot with id =782 with following details :
+event_action: ""Interact Chatbot History""
+event_category: ""Study Channels""
+event_label = ""Open Chatbot History""
+Other fields:
+channel_type, user_type, user_signed_in,
+search_term =  the latest prompt sent by user before he open the history page / empty for feed
+subject, topic
+location_in_app = ""Chatbot History""
+channel_section = ""Higher Education""
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+location_in_app = ""AI Tutor""  always for AI tutor related scenarios
+channel_flow = ""HW help""  always for AI tutor related scenarios
+initiate_point = reflect the active tab underneath the AI tutor component (""My Course, AI Tutor, Guided, Exam Prep etc"")
+";;Pass/Complete;"CHAN-13053
+CHAN-13287";;;;;;;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario_AI tutor;[iOS] AI Tutor: send multiple PLA when opening the history page/item;;;"Event ""Open Chatbot History"" id (782) is sent after tap on open chat history icon from My Course page";Medium;"Precondition: Demo app-open AB test Feature  Enabled and  Chat history should avaialable for login user
+1. Launch application and login
+2. Open Higher Education channel 
+3. Tap on AI Tutor 
+4. Tap on  ""<AI Chat icon>+ Ask Ai Tutor for help "" section
+5. Tap on Chat History icon button from AI Tutor 
+6.Check in tracking tool triggered event Open Chatbot History with id =782
+";"1. Application is launched
+2. Channel Page is displayed 
+3.  AI Tutur tab page is opened 
+4. AI Tutor page is display
+5. Chat History Page is displayed
+6. Verify event event Click Close Chatbot with id =782 with following details :
+event_action: ""Interact Chatbot History""
+event_category: ""Study Channels""
+event_label = ""Open Chatbot History""
+Other fields:
+channel_type, user_type, user_signed_in,
+search_term =  the latest prompt sent by user before he open the history page / empty for feed
+subject, topic
+location_in_app = ""Chatbot History""
+channel_section = ""Higher Education""
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+location_in_app = ""AI Tutor""  always for AI tutor related scenarios
+channel_flow = ""HW help""  always for AI tutor related scenarios
+initiate_point = reflect the active tab underneath the AI tutor component (""My Course, AI Tutor, Guided, Exam Prep etc"")
+";;Pass/Complete;"CHAN-13053
+CHAN-13287";;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario_AI tutor;[iOS] AI Tutor: send multiple PLA when opening the history page/item;;;"Event ""Select Chat History "" id (782) is sent after tap on history List item from Chat History Page- My Course Tab";Medium;"Precondition: Demo app-open AB test Feature  Enabled  
+and Chat history should avaialable for login user
+1. Launch application and login
+2. Open Higher Education channel 
+3. Tap on My Course Tab 
+4. Tap on  ""<AI Chat icon>+ Ask Ai Tutor for help "" section
+5. Tap on Chat History icon button from AI Tutor 
+6.Verify Go to Console app / Mixpanel / Message status tool / GA and check triggered event Open Chatbot History with id =782
+";"1. Application is launched
+2. Channel Page is displayed 
+3. My course tab page is opened 
+4. AI Tutor page is display
+5. Chat History Page is displayed
+6. Verify event event Click Close Chatbot with id =782 with following details :
+event_action: ""Interact Chatbot History""
+event_category: ""Study Channels""
+event_label = ""Open Chatbot History""
+Other fields:
+channel_type, user_type, user_signed_in,
+search_term =  the latest prompt sent by user before he open the history page / empty for feed
+subject, topic
+location_in_app = ""Chatbot History""
+channel_section = ""Higher Education""
+channel_flow = ""My Course""
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+location_in_app = ""AI Tutor""  always for AI tutor related scenarios
+channel_flow = ""HW help""  always for AI tutor related scenarios
+initiate_point = reflect the active tab underneath the AI tutor component (""My Course, AI Tutor, Guided, Exam Prep etc"")
+";;Pass/Complete;"CHAN-13053
+CHAN-13287";;;;;;;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario_AI tutor;[iOS] AI Tutor: Display History on Feed;;;[iOS] AI Tutor: Display History on Feed;Medium;"Precondition: Demo app-open AB test Feature  Enabled and  Chat history should avaialable for login user
+1. Launch application and login
+2. Open Higher Education channel 
+3. Tap on AI Tutor Tab 
+4. Verify  ""<AI Chat icon>+ Ask Ai Tutor for help "" section, Snap a photo of a question, Chat History Se all link button
+4. Verify ""Chat History "" section with Time section Today, This Week, Last week , Two weeks ago 
+5. Tap on See all link button 
+";"1. Application is launched 
+2. Channel Page is displayed 
+3. AI Tutor tab page is opened 
+4.""<AI Chat icon>+ Ask Ai Tutor for help "" section, Snap a photo of a question, Chat History Se all link button iare displayed
+5. Chat History page is displayed with Time section history  Today, This Week, Last week , Two weeks ago 
+
+";;Pass/Complete;CHAN-12744;;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario_AI tutor;[iOS] AI Tutor: send PLA when sending a request or receiving a reply;;;"WHEN chat bot replies
+AND answer contains video assets suggested
+THEN send PLA id=617 with event_label = ""Concept Video""";Medium;"Precondition: Demo app-open AB test Feature  Enabled  
+and Chat history should avaialable for login user
+1. Launch application and login
+2. Open Higher Education channel 
+3. Tap on AI Tutor Tab 
+4. Tap on  ""<AI Chat icon>+ Ask Ai Tutor for help "" section
+5. Enter query for topic video in Type your Message text box 
+6.Verify Go to Console app / Mixpanel / Message status tool / GA and check triggered event Open Chatbot History with id =617 
+";"1. Application is launched
+2. Channel Page is displayed 
+3. AI Tutor tab page is opened 
+4. AI Tutor page is display
+5. Chat History Page is displayed
+6. Verify event event Concept video with id =617 with following details :
+event_action: ""View HW answers""
+event_category: ""Study Channels""
+event_label = ""Concept Video"", ""Practice Problems"", ""Office Hours""
+
+Other fields:
+channel_type, user_type, user_signed_in,
+search_term =  the last prompt user has sent
+subject, topic
+channel_section = ""Higher Education""
+channel_flow = ""AI Tutor"", ""My course""
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+";;Pass/Complete;CHAN-13054;;;;;;;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario_AI tutor;[iOS] AI Tutor: send PLA when sending a request or receiving a reply;;;"WHEN chat bot replies
+AND answer contains video assets suggested
+THEN send PLA id=617 with event_label = ""Concept Video""";Medium;"Precondition: Demo app-open AB test Feature  Enabled  
+and Chat history should avaialable for login user
+1. Launch application and login
+2. Open Higher Education channel 
+3. Tap on AI Tutor Tab 
+4. Tap on  ""<AI Chat icon>+ Ask Ai Tutor for help "" section
+5. Enter query for topic video in Type your Message text box 
+6.Verify Go to Console app / Mixpanel / Message status tool / GA and check triggered event Concept Video with id =617 
+";"1. Application is launched
+2. Channel Page is displayed 
+3. AI Tutor tab page is opened 
+4. AI Tutor page is display
+5. Chat History Page is displayed
+6. Verify event event Concept video with id =617 with following details :
+event_action: ""View HW answers""
+event_category: ""Study Channels""
+event_label = ""Concept Video"", ""Practice Problems"", ""Office Hours""
+
+Other fields:
+channel_type, user_type, user_signed_in,
+search_term =  the last prompt user has sent
+subject, topic
+channel_section = ""Higher Education""
+channel_flow = ""AI Tutor"", ""My course""
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+";;Pass/Complete;CHAN-13054;;;;;;;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario_;[iOS] AI Tutor: send PLA when sending a request or receiving a reply;;;"WHEN chat bot replies
+AND answer contains video assets suggested
+THEN send PLA id=617 with event_label = ""Problem asset""";Medium;"Precondition: Demo app-open AB test Feature  Enabled  
+and Chat history should avaialable for login user
+1. Launch application and login
+2. Open Higher Education channel 
+3. Tap on AI Tutor Tab 
+4. Tap on  ""<AI Chat icon>+ Ask Ai Tutor for help "" section
+5. Enter query for topic problem in Type your Message text box 
+6.Verify Go to Console app / Mixpanel / Message status tool / GA and check triggered event Problem asset with id =617 
+";"1. Application is launched
+2. Channel Page is displayed 
+3. AI Tutor tab page is opened 
+4. AI Tutor page is display
+5. Chat History Page is displayed
+6. Verify event event Concept video with id =617 with following details :
+event_action: ""View HW answer""
+event_category: ""Study Channels""
+event_label = ""Problem asset"", ""Practice Problems"", ""Office Hours""
+
+Other fields:
+channel_type, user_type, user_signed_in,
+search_term =  the last prompt user has sent
+subject, topic
+channel_section = ""Higher Education""
+channel_flow = ""AI Tutor"", ""My course""
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+";;;;;;;;;;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario;AI Tutor: send PLA for click on video and practice assets suggested;;;"""Select HW answer"" event (id 608) with event_label = ""Concept Video"" is sent after click on video asset group";High;"1. Launch application and login
+2. Initiate chat bot reply with video assets 
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field
+ - enter in search field a question which returns some videos)
+3. Click on ""Watch vieos"" field
+4. Check in tracking tool ""Select HW answer"" event triggered in step 3";"1. Application is launched, user is authorized
+2. ""Watch videos"" field is displayed
+3. Videos are displayed
+4. ""Select HW answer"" event is sent with:
+event_action: ""Select HW answer""
+event_category: ""Study Channels""
+event_label = ""Concept Video""
+
+Other fields:
+channel_type, user_type, user_signed_in,
+channel_section = ""Higher Education""
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+location_in_app = ""AI Tutor""  always for AI tutor related scenarios
+channel_flow = ""HW help""  always for AI tutor related scenarios
+initiate_point = reflect the active tab underneath the AI tutor component (""My Course, AI Tutor, Guided, Exam Prep etc"")";"my course - ok
+IT tutor - ok";Pass/Complete;"CHAN-13055
+CHAN-13287";;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario;AI Tutor: send PLA for click on video and practice assets suggested;;;"""Select HW answer"" event (id 608) with event_label =""Practice Problems"" is sent after click on practice asset group";High;"1. Launch application and login
+2. Initiate chat bot reply with practice assets 
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field
+ - enter in search field a question which returns some practice assets)
+3. Click on ""See questions"" field
+4. Check in tracking tool ""Select HW answer"" event triggered in step 3";"1. Application is launched, user is authorized
+2. ""See questions"" field is displayed
+3. ""Practice Problem"" cards are displayed
+4. ""Select HW answer"" event is sent with:
+event_action: ""Select HW answer""
+event_category: ""Study Channels""
+event_label = ""Practice Problems""
+
+Other fields:
+channel_type, user_type, user_signed_in,
+channel_section = ""Higher Education""
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+location_in_app = ""AI Tutor""  always for AI tutor related scenarios
+channel_flow = ""HW help""  always for AI tutor related scenarios
+initiate_point = reflect the active tab underneath the AI tutor component (""My Course, AI Tutor, Guided, Exam Prep etc"")";;Pass/Complete;"CHAN-13055
+CHAN-13287";;;;;;Pass/Complete;;CHAN-13295;;;;;;;;;
+Pearson+ Study_Channel_Scenario;AI Tutor: send PLA for click on video and practice assets suggested;;;"""Select Card"" event (id 572) with event_label = ""Concept Video"" and card_type = ""video"" is sent after click on particular video";High;"1. Launch application and login
+2. Initiate chat bot reply with video assets 
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field
+ - enter in search field a question which returns some videos)
+3. Click on ""Watch vieos"" field
+4. Click on a video asset
+5. Check in tracking tool ""Select Card"" event triggered in step 4";"1. Application is launched, user is authorized
+2. ""Watch videos"" field is displayed
+3. Videos are displayed
+4. Navigation to selected video happens
+5. ""Select Card"" event is sent with:
+event_action: ""Select Card""
+event_category: ""Study Channels""
+event_label = ""Concept Video""
+
+Other fields:
+channel_type, user_type, user_signed_in,
+search_term =  the last prompt user sent before opening the asset
+asset_id
+card_type = ""video"" 
+channel_section = ""Higher Education""
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+location_in_app = ""AI Tutor""  always for AI tutor related scenarios
+channel_flow = ""HW help""  always for AI tutor related scenarios
+initiate_point = reflect the active tab underneath the AI tutor component (""My Course, AI Tutor, Guided, Exam Prep etc"")";"my course - ok
+IT tutor - ok";Pass/Complete;"CHAN-13055
+CHAN-13287";;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario;AI Tutor: send PLA for click on video and practice assets suggested;;;"""Select Card"" event (id 572) with event_label = ""Practice Problems"" and card_type = ""practice"" is sent after click on particular problem asset";High;"1. Launch application and login
+2. Initiate chat bot reply with practice assets 
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field
+ - enter in search field a question which returns some practice assets)
+3. Click on ""See questions"" field
+4. Click on a problem asset
+5. Check in tracking tool ""Select Card"" event triggered in step 4";"1. Application is launched, user is authorized
+2. ""See questions"" field is displayed
+3. ""Practice Problem"" cards are displayed
+4. Navigation to selected problem asset happens
+5. ""Select Card"" event is sent with:
+event_action: ""Select Card""
+event_category: ""Study Channels""
+event_label = ""Practice Problems""
+Other fields:
+channel_type, user_type, user_signed_in,
+search_term =  the last prompt user sent before opening the asset
+asset_id
+card_type = ""practice""
+channel_section = ""Higher Education""
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+location_in_app = ""AI Tutor""  always for AI tutor related scenarios
+channel_flow = ""HW help""  always for AI tutor related scenarios
+initiate_point = reflect the active tab underneath the AI tutor component (""My Course, AI Tutor, Guided, Exam Prep etc"")";my course, AI tutor - ok (navigated to video , content type - video solution, asset_id - video solution) - bug;Pass/Complete;"CHAN-13055
+CHAN-13287";;;;;;Pass/Complete;;CHAN-13350;;;;;;;;;
+Pearson+ Study_Channel_Scenario;AI Tutor: PLA changes;;;"""Select Card"" event (id 572) which was triggered in My Course sections is not affected by AI Tutor PLA changes";High;"1. Launch application
+2. Open a High education channel in My Course tab
+3. Click on any asset / topic in My course sections (Start studying, Jump back in, Next recommeded for you, Recently viewed, Most popular topics of the week)
+4. Check in tracking tool ""Select Card"" event triggered in step 3";"1. Application is launched
+2. Channel is opened in My Course tab
+3. Navigation to selected asset / topic happens
+4. - location_in_app - not sent
+ - channel_flow  - My course
+ -  ""initiate_point"" is not sent";;Pass/Complete;"
+CHAN-13287";;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario;AI Tutor: Entry point;;;AI Tutor entry point is present if AI feature is enabled in AB settings and flag showAiTutor = true in channels json;High;"Precondition: there is a channel with flag showAiTutor = true in channels json
+1. Launch application and login
+2. Enable AI feature in AB settings
+3. Open channel from precondition
+4. Check AI tutor tab 
+5. Open channel in My course tab
+6. Check AI Tutor entry point
+7. Click on AT Tutor entry point
+8. Repeate steps 1-7 for anonymous user";"1. Application is launched, user is authorized
+2. AI feature is enabled in AB settings
+3. Channel is opened
+4. AI tutor tab is present
+5. Channel opens in My course tab
+6. AI Tutor entry point is present, it is displayed above all the sections
+7. AI Tutor component opens for authorized user, registration pop-up is displayed for anonymous user
+8. See E.R. 1-7";registration pop-up - tbd;Pass/Complete;CHAN-12743;;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario;AI Tutor: Entry point;;;AI Tutor entry point is absent if AI feature is disabled in AB settings and flag showAiTutor = true in channels json;High;"Precondition: there is a channel with flag showAiTutor = true in channels json
+1. Launch application and login
+2. Disable AI feature in AB settings
+3. Open channel from precondition
+4. Check AI tutor tab 
+5. Open channel in My course tab
+6. Check AI Tutor entry point
+7. Repeate steps 1-6 for anonymous user";"1. Application is launched, user is authorized
+2. AI feature is disabled in AB settings
+3. Channel is opened
+4. AI tutor tab is absent
+5. Channel opens in My course tab
+6. AI Tutor entry point is absent
+7. See E.R. 1-6";;Pass/Complete;CHAN-12743;;;;;;Not applicable;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario;AI Tutor: Entry point;;;AI Tutor entry point is absent if AI feature is enabled in AB settings and flag showAiTutor = false or absent in channels json;High;"Precondition: there is a channel with flag showAiTutor = false or without flag showAiTutor in channels json
+1. Launch application and login
+2. Enable AI feature in AB settings
+3. Open channel from precondition
+4. Check AI tutor tab 
+5. Open channel in My course tab
+6. Check AI Tutor entry point
+7. Repeate steps 1-6 for anonymous user";"1. Application is launched, user is authorized
+2. AI feature is enabled in AB settings
+3. Channel is opened
+4. AI tutor tab is absent
+5. Channel opens in My course tab
+6. AI Tutor entry point is absent
+7. AI Tutor component opens
+8. See E.R. 1- 6";"showAiTutor = false - ok
+without flag showAiTutor - ok";Pass/Complete;CHAN-12743;;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: open tab PLA;;;"""Select Study Flow"" event (id 338) is sent after click oo ""AI Tutor"" tab";Medium;"Precondition for Demo: AI Tutor feature is enabled in AB settings
+1. Launch  application
+2. Open a High education channel in any flow but not in AI Tutor
+3. Select AI Tutor tab
+4. Check in tracking tool ""Select Study Flow"" PLA event tirggered in step 3";"1. Application is launched
+2. Channel is opened in My Course, Learn, Practice, Explore or Flashcards flow
+3. Channel is opened in AI Tutor tab
+4. ""Select Study Flow"" PLA event is sent with:
+ - ""event_action"": ""Select Study Flow""
+ - ""event_category"": ""Study Channels""
+ - ""event_label"": ""AI Tutor""
+ - ""channel_flow""
+ - ""channel_section"": ""Higher Education""
+ - ""channel_type""
+ - ""channels_p_bundle_subs""
+ - ""channels_subs""
+ - ""location_in_app"": ""Main Page""
+ - ""mlm_subs""
+ - ""non_subs""
+ - ""pplus_subs""
+ - ""school_name""
+ - textbook_name, 
+ - professor_name
+- ""user_signed_in"": ""true""
+ - ""user_type""";;Pass/Complete;CHAN-13169;;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: send PLA 295 and 296 for click on assets;;;"""Select Video"" event (id 296),  ""Video Playing"" event (id 486), and ""Asset Complete"" event (id 387) are sent after click on particular video";High;"Precondition for Demo app: Enable AI Tutor feature in AB settings
+1. Launch application and login
+2. Initiate chat bot reply with video assets 
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field
+ - enter in search field a question which returns some videos)
+3. Click on ""Watch vieos"" field
+4. Click on a video asset
+5. Check in tracking tool ""Select Video"" event triggered in step 4
+6. Check in tracking tool ""Video Playing"" event triggered in step 4
+7. Watch over 80% of video and check in tracking tool ""Asset Complete"" event";"1. Application is launched, user is authorized
+2. ""Watch videos"" field is displayed
+3. Videos are displayed
+4. Navigation to selected video happens, video playback starts
+5. ""Select Video"" event (id 296) is sent with:
+event_action: ""Select Video""
+event_category: ""Study Channels""
+Event Label: ""Click"" 
+
+Other fields:
+channel_type, user_signed_in, user_type,
+topic (of the asset), asset_id, asset_type (Video Answer), asset_source
+location_in_app (Main Page), channel_section,
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+search_term =  the last prompt user sent to the chat
+location_in_app = ""AI Tutor""  always for AI tutor related scenarios
+channel_flow = ""HW help""  always for AI tutor related scenarios initiate_point = reflect the active tab underneath the AI tutor component (""My Course, AI Tutor, Guided, Exam Prep etc"")
+
+6.  ""Video Playing"" event (id 486) is sent with:
+event_action: ""Video Playing""
+event_category: ""Study Channels""
+
+Other fields:
+channel_type, user_signed_in, user_type,
+topic (topic of the asset), asset_id, asset_type, asset_source
+location_in_app (Main Page), channel_flow (AI Tutor), channel_section,
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+
+7. ""Asset Complete"" event (id 387) is sent with:
+event_category = Study Channels
+event action= Asset Complete 
+event_label = ""Asset Watched""
+
+Other fields:
+channel_type, user_signed_in, user_type,
+topic (of the asset), asset_type (video), asset_id, asset_source
+location_in_app (Main Page), channel_flow (AI Tutor), channel_section,
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+search_term =  the last prompt user sent to the chat";"
+step 5: asset type = video answer (the same as in other events e.g. Freemium Assets Count)";Pass/Complete;"CHAN-13175
+CHAN-13287";;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: send PLA 295 and 296 for click on assets;;;"""Select Practice Asset"" event (id 295),  ""Video Playing"" event (id 486), and ""Asset Complete"" event (id 387) are sent after click on particular practice problem";High;"Precondition for Demo app: Enable AI Tutor feature in AB settings
+1. Launch application and login
+2. Initiate chat bot reply with practice assets 
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field
+ - enter in search field a question which returns some practice assets)
+3. Click on ""See questions"" field
+4. Click on a practice problem
+5. Check in tracking tool ""Select Practice Asset"" event triggered in step 4
+6. Check in tracking tool ""Video Playing"" event triggered in step 4
+7. Watch over 80% of video and check in tracking tool ""Asset Complete"" event";"1. Application is launched, user is authorized
+2. ""See questions"" field is displayed
+3. ""Practice Problem"" cards are displayed
+4. Navigation to selected problem asset happens, video answer playback starts
+5. ""Select Practice Asset"" event is sent with:
+Event Category: Study Channels
+ event_action: Select Practice Asset
+event label: multiple-choice or simple-question
+Other fields:
+channel_type, user_signed_in, user_type,
+topic (topic of the asset), asset_id
+location_in_app (""Main Page""), channel_section,
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+search_term =  the last prompt user sent to the chat
+location_in_app = ""AI Tutor""  always for AI tutor related scenarios
+channel_flow = ""HW help""  always for AI tutor related scenarios
+initiate_point = reflect the active tab underneath the AI tutor component (""My Course, AI Tutor, Guided, Exam Prep etc"")
+6.  ""Video Playing"" event (id 486) is sent with:
+event_action: ""Video Playing""
+event_category: ""Study Channels""
+
+Other fields:
+channel_type, user_signed_in, user_type,
+topic (topic of the asset), asset_id, asset_type, asset_source
+location_in_app (Main Page), channel_flow (AI Tutor), channel_section,
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+
+7. ""Asset Complete"" event (id 387) is sent with:
+event_category = Study Channels
+event action= Asset Complete 
+event_label = ""Asset Watched""
+
+Other fields:
+channel_type, user_signed_in, user_type,
+topic (of the asset), asset_type (""simple-questions""), asset_id, asset_source
+location_in_app (Main Page), channel_flow (AI Tutor), channel_section,
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+search_term =  the last prompt user sent to the chat"; content type - video solution, asset_id - video solution);Pass/Complete;"CHAN-13175
+CHAN-13287";;;;;;Pass/Complete;;CHAN-13351;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: UI;;;AI Tutor: UI of table(s);High;"Precondition:
+1) Precondition only for Demo app: Enable AI Tutor feature in AB settings
+2) There is a question for AI tutor, which returns tables in a channel
+1. Launch application and login
+2. Initiate chat bot reply with a table / some tables 
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field
+ - enter in search field a question which returns a table / some tables (question from precondition)
+3. Check UI of table (s)";"1. Application is launched, user is authorized
+2. Chat bot reply is displayed, it contains a table / some tables
+3. The whole table is displayed, there are no empty spaces";;Pass/Complete;scenario without a story;;;;;;;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: UI;;;AI Tutor: video (s);High;"Precondition:
+1) Precondition only for Demo app: Enable AI Tutor feature in AB settings
+2) There is a question for AI tutor, which returns video(s) in a channel
+1. Launch application and login
+2. Initiate chat bot reply with a video / some videos 
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field
+ - enter in search field a question which returns a video / some videos (question from precondition))
+3. Click on ""Watch videos"" button
+4. Check UI of card(s) with videos";"1. Application is launched, user is authorized
+2. Chat bot reply is displayed, it contains ""Watch videos"" button
+3. Card(s) with video assets are displayed
+4. Card(s) are fully displayed, there are no empty spaces";;Pass/Complete;scenario without a story;;;;;;;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: UI;;;AI Tutor: practice (s);High;"Precondition:
+1) Precondition only for Demo app: Enable AI Tutor feature in AB settings
+2) There is a question for AI tutor, which returns practice(s) in a channel
+1. Launch application and login
+2. Initiate chat bot reply with a practice / some practices 
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field
+ - enter in search field a question which returns a practice asset / some practice assets (question from precondition))
+3. Click on ""See questions"" button
+4. Check UI of card(s) ";"1. Application is launched, user is authorized
+2. Chat bot reply is displayed, it contains ""See questions"" button
+3. Card(s) with practice assets are displayed with related to topic 
+4. Card(s) are fully displayed, there are no empty spaces";;Pass/Complete;scenario without a story;;;;;;;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: Reply;;;AI Tutor: Related Video(s);High;"Precondition:
+1) Precondition only for Demo app: Enable AI Tutor feature in AB settings
+2) There is a question for AI tutor, which returns Video(s) in a channel
+1. Launch application and login
+2. Initiate chat bot reply with a Videos/ Videos lesson
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field
+ - enter in search field a question which returns a Videos lessions
+3. Click on ""Watch videos"" button
+4. Check UI of card(s) ";"1. Application is launched, user is authorized
+2. Chat bot reply is displayed, it contains ""Watch videos"" button
+3. Card(s) with video lessons are displayed with related topic 
+4. Card(s) are fully displayed, there are no empty spaces";;Pass/Complete;scenario without a story;;;;;;;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: UI;;;AI Tutor: Feedback;High;"Precondition:
+1) Precondition only for Demo app: Enable AI Tutor feature in AB settings
+1. Launch application and login
+2. Initiate chat bot reply 
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field
+ - enter in search field a question which returns a Videos lessions
+3. Tap on Downward arrow to scroll down
+4. Tap on Thumps up/ like icon for positive feedback
+5. Verify Feedback popup
+6. Tap on Cancel button from Feedback popup
+7. Tap on Thumps Down/ Dislike icon for negative feedback and Verify 
+ ";"1. Application is launched, user is authorized
+2. Chat bot reply is displayed
+3. Page should scrolled down 
+4. Great!  Popup should display
+5. Great!  Popup should display with following 
+ - 'What did you like most about this response?' textbox 
+ - Cancel and Submit button 
+6. Great!  Popup should closed
+7. Sorry About that! Popup is diaplayed with following 
+   - Checkboxed with options Not Helpful, Not Correct, Unsafe/harmful, Something else
+   - Textbox with pretext 'Type your message'
+   - Cancel and Submit button ";;Pass/Complete;scenario without a story;;;;;;;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: Feedback;;;AI Tutor: Positive Feedback;High;"Precondition:
+1) Precondition only for Demo app: Enable AI Tutor feature in AB settings
+1. Launch application and login
+2. Initiate chat bot reply 
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field
+ - enter in search field a question which returns a Videos lessions
+3. Tap on Downward arrow to scroll down
+4. Tap on Thumps up icon for positive feedback
+5. Verify Feedback popup
+6. Enter feedback in textbox  field and tap on Submit button
+7. Verify Thumpup / like icon 
+ ";"1. Application is launched, user is authorized
+2. Chat bot reply is displayed
+3. Page should scrolled down 
+4. Great!  Popup should display
+5. Great!  Popup should display with following 
+ - 'What did you like most about this response?' textbox 
+ - Cancel and Submit button 
+6. Entered text successfully and feedback submitted successfully message appeared and closed popup.
+7. Thumps / Like icon should selected .";;Pass/Complete;scenario without a story;;;;;;;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: Feedback;;;AI Tutor: Negative Feedback;High;"Precondition:
+1) Precondition only for Demo app: Enable AI Tutor feature in AB settings
+1. Launch application and login
+2. Initiate chat bot reply 
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field
+ - enter in search field a question which returns a Videos lessions
+3. Tap on Downward arrow to scroll down
+4. Tap on Thumps down icon for negative feedback
+5. Verify Feedback popup
+6. Tap on checkbox to select appropriate option 
+7. Enter feedback in textbox  field and tap on Submit button
+7. Verify Thumpdown/ dislike icon 
+ ";"1. Application is launched, user is authorized
+2. Chat bot reply is displayed
+3. Page should scrolled down 
+4. Great!  Popup should display
+5. Sorry About that! Popup is diaplayed with following 
+   - Checkboxed with options Not Helpful, Not Correct, Unsafe/harmful, Something else
+   - Textbox with pretext 'Type your message'
+   - Cancel and Submit button 
+6. Entered text successfully and feedback submitted successfully
+ message appeared and closed popup.
+7. OPetion should selected properly
+7. Thumpsdown / disike icon should selected ";;Pass/Complete;scenario without a story;;;;;;;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: Use question from history- Applicable;;;AI Tutor: Use question from history- Applicable;;"Precondition:
+1) Precondition only for Demo app: Enable AI Tutor feature in AB settings and AI tutor has history 
+1. Launch application and login
+2. Open channel with AI Tutor tab 
+3. Tap on See All Link from CHAT HISTORY section 
+4.  Tap on any item from history list 
+5. Tap on  Watch videos / See questions 
+ ";"1. Application is launched, user is authorized
+2. AI Tutor page should display 
+3. Chat History poup is showing 
+4. Verify previous chat history with Description , Videos and Questions 
+5. Watch videos / See questions expands and showing related videos / Practice Problems ";;Fail;scenario without a story;;;;;;;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: Search history ;;;AI Tutor: Search history;;"Precondition:
+1) Precondition only for Demo app: Enable AI Tutor feature in AB settings and AI tutor has history 
+1. Launch application and login
+2. Open channel with AI Tutor tab 
+3. Tap on See All Link from CHAT HISTORY section 
+4.  Tap on Filter by chat search textbox and Enter chat history question / words 
+
+ ";"1. Application is launched, user is authorized
+2. AI Tutor page should display 
+3. Chat History poup is showing 
+4. Search result should display properly for entered question /words 
+";;Fail;scenario without a story;;;;;;;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: Delete Search history ;;;AI Tutor: Delete Search history ;;"Precondition:
+1) Precondition only for Demo app: Enable AI Tutor feature in AB settings and AI tutor has history 
+1. Launch application and login
+2. Open channel with AI Tutor tab 
+3. Tap on See All Link from CHAT HISTORY section 
+4.  Tap on three dots from Chat history question's  right side
+5.  Tap on Delete option from popup
+
+ ";"1. Application is launched, user is authorized
+2. AI Tutor page should display 
+3. Chat History poup is showing 
+4. Popup should display with Rename and Delete option 
+5. Question should deleted from Chat History popup / History section ";;Pass/Complete;scenario without a story;;;;;;;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor:  Context reply ;;;AI Tutor: Context reply  ;;"Precondition only for Demo app: Enable AI Tutor feature
+1. Launch application and login
+2. Open any channel ex.  General Biology channel
+3. Tap on AI Tutor tab
+4. Tap on Ask Ai Tutor for help 
+5. Enter text  ""What is photosynthesis?"" in textbox
+6. Enter text ""How it works"" 
+";"1. Application is launched, user is authorized
+2. Channel page is displayed 
+3. AI Tutor page is displayed 
+4.  AI Tutor popup is displayed
+5. AI Tutor Reply with description, Watch videos and  see questions 
+6.  AI Tutor Reply with previous context question related .";;Fail;scenario without a story;;;;;;;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: Web user Chat history ;;;AI Tutor: Web user Chat history verify in mobile app ;;"Precondition :  Demo app: Enable AI Tutor feature and Web user has AI Tutor chat history 
+1. Launch application and login with web user credentials 
+2. Open any channel 
+3. Tap on AI Tutor tab
+4. Verify Chat History section 
+5. Tap on See all link 
+6.  Verify Chat History for web user ";"1. Application is launched, user is authorized
+2. Channel page is displayed 
+3. AI Tutor page is displayed 
+4.  Web user Chat history should display
+5.  Chat History popup should display 
+6.   Web user Chat history should display";;User data required ;scenario without a story;;;;;;;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;AI Tutor: PLA changes;;;"Updates of PLA event ""View HW answer"" (id 617)";High;"Precondition for Demo app: Enable AI Tutor feature in AB settings
+1. Launch application and login
+2. Initiate chat bot reply with video / practice assets 
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field
+ - enter in search field a question which returns some practice assets / some video assets)
+3. Check in tracking tool ""View HW answer"" event triggered in step 2
+4. Check that if reply contains both video and practice assets 2 events are sent";"1. Application is launched, user is authorized
+2. ""See questions"" / ""Watch videos"" field is displayed
+3. ""View HW answer"" event is sent with:
+event_action: ""View HW answers""
+event_category: ""Study Channels""
+event_label = ""Concept Video"" (if reply contains video assets), ""Practice Problems"" (if reply contains practice assets)
+
+Other fields:
+channel_type, user_type, user_signed_in,
+search_term =  the last prompt user has sent
+subject, topic
+channel_section = ""Higher Education""
+channel_flow = ""AI Tutor"", ""My course""
+mlm_subs, pplus_subs, channels_subs, non_subs, channels_p_bundle_subs
+location_in_app = ""AI Tutor""  always for AI tutor related scenarios
+channel_flow = ""HW help""  always for AI tutor related scenarios initiate_point = reflect the active tab underneath the AI tutor component (""My Course, AI Tutor, Guided, Exam Prep etc"")
+4. 2 events are sent";;Pass/Complete;"CHAN-13287
+(updated CHAN-13054)";;;;;;Pass/Complete;;CHAN-13351;;;;;;;;;
+Pearson+ Study_Channel_Scenario;AI Tutor: PLA changes;;;"""Select Video"" event (id 296)  which was triggered in explore tab is not affected by AI Tutor PLA changes";High;"1. Launch application
+2. Open a High education channel in Explore tab
+3. Click on any video asset from video carousel
+4. Check in tracking tool ""Select Video"" event triggered in step 3";"1. Application is launched
+2. Channel is opened in Explore tab
+3. Video asset page opens, video playback starts
+4. - location_in_app - Main Page
+ - channel_flow - Explore
+ -  ""initiate_point"" is not sent";;Pass/Complete;"
+CHAN-13287";;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario;AI Tutor: PLA changes;;;"""Select Practice Asset"" event (id 296)  which was triggered in learn / explore / practice tab is not affected by AI Tutor PLA changes";High;"1. Launch application
+2. Open a High education channel in Learn / Explore / Practice tab
+3. Click on any practice asset from practice carousel in explore flow / on any practice card in practice flow / on any answer option in learn flow
+4. Check in tracking tool ""Select Practice Asset"" event triggered in step 3";"1. Application is launched
+2. Channel is opened in Learn / Explore / Practice tab
+3. Practice asset page opens in explore or practice flow, an answer option is highlighted in learn flow
+4. - location_in_app is not ""AI Tutor""  
+ - channel_flow is not ""HW help""  
+ -  ""initiate_point"" is not sent";;Pass/Complete;"
+CHAN-13287";;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario;AI tutor: Apply text hugging for one-line history item;;;AI tutor: Apply text hugging for one-line history item;Medium;"1. Launch application and login
+2. Enable AI Tutor functionality in AB settings
+3. Open a High education channel
+4. Select AI Tutor tab 
+5. Check items in chat history which take 1 line only";"1. Application is launched, user is authorized
+2. AI Tutor functionality is enabled
+3. Channel is opened
+4. Channel is opened in AI tutor tab
+5. Fields for this items hug the text, see in design https://www.figma.com/design/CidYt5K1e1yNEP0lCHusvM/Channels-iOS-mobile?node-id=25339-15327&t=hbVrPtbBXgXben3S-0";;Pass/Complete;"
+CHAN-13360";;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;[iOS] AI Tutor: anonymous mode;;;[iOS] AI Tutor: anonymous mode - AI Tutor Tab ;High;"Precondition:
+1) Precondition only for Demo app: Enable AI Tutor feature in AB settings and AI tutor has history 
+1. Launch application
+2. Open channel with AI Tutor tab 
+3. Tap on Ask AI Tutor for Help 
+4.Check in tracking tool ""User sees Registration wall Pop Up"" PLA event ( PLA id = 496 ) tirggered in step 3
+
+ ";"1. Application is launched, user is authorized
+2. AI Tutor page should display 
+3.  Registration wall Pop Up is displayed 
+4. Event ""User sees Registration wall Pop Up"" sent with following :
+location_in_app = ""Main page""
+channel_flow = ""My Course"" or ""AI Tutor""
+asset_type = ""AI Tutor""
+event: studychannelsevent
+event_category: Study Channels
+channel_section: Higher Education
+user_signed_in: false
+event_action: User sees Registration wall Pop Up";;Pass/Complete;CHAN-13569;;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;[iOS] AI Tutor: anonymous mode;;;[iOS] AI Tutor: anonymous mode - My Course tab;High;"Precondition:
+1) Precondition only for Demo app: Enable AI Tutor feature in AB settings and AI tutor has history 
+1. Launch application 
+2. Open channel and navigate to My Course tab 
+3. Tap on Ask AI Tutor for Help 
+4.Check in tracking tool ""User sees Registration wall Pop Up"" PLA event ( PLA id = 496 ) tirggered in step 3
+
+ ";"1. Application is launched, user is authorized
+2. My Course page should display 
+3.  Registration wall Pop Up is displayed 
+4. Event ""User sees Registration wall Pop Up"" sent with following :
+location_in_app = ""Main page""
+channel_flow = ""My Course"" or ""AI Tutor""
+asset_type = ""AI Tutor""
+event: studychannelsevent
+event_category: Study Channels
+channel_section: Higher Education
+user_signed_in: false
+event_action: User sees Registration wall Pop Up";;Pass/Complete;CHAN-13569;;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study Channel_Scenario_;[iOS] AI Tutor: send PLA id 673 when click on the Entry Point;;;[iOS] AI Tutor: send PLA id 673 when click on the Entry Point;High;"Precondition:
+1) Precondition only for Demo app: Enable AI Tutor feature in AB settings and AI tutor has history 
+1. Launch application and login
+2. Open channel and navigate to My Course tab 
+3. Tap on Ask AI Tutor for Help 
+4.Check in tracking tool ""User sees Registration wall Pop Up"" PLA event ( PLA id = 673 ) tirggered in step 3
+
+ ";"1. Application is launched, user is authorized
+2. My Course page should display 
+3.  AI Tutor popup is displayed
+4. Event ""User sees Registration wall Pop Up"" sent with following :
+event_action: ""Click Chatbot CTA""
+event_category: ""Study Channels""
+
+Fields
+
+event_label = ""Open AI Tutor""
+
+location_in_app = ""AI Tutor""
+channel_flow = ""HW help""
+channel_section = ""Higher Education""
+initiate_point
+channel_type
+user_signed_in
+subject
+topic
+user_entitlement_mix";Where is scenario for AI tutor tab?;Pass/Complete;CHAN-13550,CHAN-13659;;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario;[iOS] AI Tutor: send multiple PLA when opening the history page/item;;;[iOS] AI Tutor: send multiple PLA when opening the history page/item-UpVoting icon;High;"Precondition:
+1) Precondition only for Demo app: Enable AI Tutor feature in AB settings
+1. Launch application and login
+2. Initiate chat bot reply 
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field
+ - enter in search field a question which returns a Videos lessions
+3. Tap on Downward arrow to scroll down
+4. Tap on Thumps up icon for positive feedback
+5. Check in tracking tool ""Select Question Solve Feedback"" PLA event ( PLA id = 611 ) tirggered in step 4
+
+ ";"1. Application is launched, user is authorized
+2. Chat bot reply is displayed
+3. Page should scrolled down 
+4. Great!  Popup should display
+5. Verify event with following :
+event_action: ""Select Question Solve Feedback""
+event_category: ""Study Channels""
+
+Fields:
+event_label =  ""Yes""
+location_in_app = ""AI Tutor""/""My Course""
+channel_flow = ""HW help""
+channel_section = ""Higher Education""
+initiate_point
+channel_type
+user_signed_in= true
+search_term =  
+user_input =  the value from the input on the dialogue
+user_entitlement_mix";;Pass/Complete;CHAN-13061;;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario;[iOS] AI Tutor: send multiple PLA when opening the history page/item;;;[iOS] AI Tutor: send multiple PLA when opening the history page/item-DownVoting icon;High;"Precondition:
+1) Precondition only for Demo app: Enable AI Tutor feature in AB settings
+1. Launch application and login
+2. Initiate chat bot reply 
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field
+ - enter in search field a question which returns a Videos lessions
+3. Tap on Downward arrow to scroll down
+4. Tap on Thumps down icon for negative feedback
+5. Check in tracking tool ""Select Question Solve Feedback"" PLA event ( PLA id = 611 ) tirggered in step 4
+ ";"1. Application is launched, user is authorized
+2. Chat bot reply is displayed
+3. Page should scrolled down 
+4. Great!  Popup should display
+5.  Verify event with following :
+event_action: ""Select Question Solve Feedback""
+event_category: ""Study Channels""
+
+Fields:
+event_label =  ""No""
+location_in_app = ""AI Tutor""/""My Course""
+channel_flow = ""HW help""
+channel_section = ""Higher Education""
+initiate_point
+channel_type
+user_signed_in= true
+search_term =  
+user_input =  the value from the input on the dialogue
+user_entitlement_mix";;;CHAN-13061;;;;;;;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario;[iOS] AI Tutor: send multiple PLA when opening the history page/item;;;[iOS] AI Tutor: send multiple PLA when opening the history page/item-DownVoting all Option submit;High;"Precondition:
+1) Precondition only for Demo app: Enable AI Tutor feature in AB settings
+1. Launch application and login
+2. Initiate chat bot reply 
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field
+ - enter in search field a question which returns a Videos lessions
+3. Tap on Downward arrow to scroll down
+4. Tap on Thumps down icon for negative feedback
+5. Verify Feedback popup
+6. Tap on ""Not helpful"", ""Not correct"", ""Unsafe"", ""Something else""checkbox to select
+7. Enter feedback in textbox  field and tap on Submit button
+8. Check in tracking tool ""Select Question Solve Feedback"" PLA event ( PLA id = 611 ) triggered in step 7
+ 
+ ";"1. Application is launched, user is authorized
+2. Chat bot reply is displayed
+3. Page should scrolled down 
+4. Great!  Popup should display
+5. Sorry About that! Popup is diaplayed with following 
+   - Checkboxed with options Not Helpful, Not Correct, Unsafe/harmful, Something else
+   - Textbox with pretext 'Type your message'
+   - Cancel and Submit button 
+6. Entered text successfully and feedback submitted successfully
+ message appeared and closed popup.
+7. All options should selected properly
+8. Verify event with following :
+event_action: ""Select Question Solve Feedback""
+event_category: ""Study Channels""
+
+Fields:
+event_label = 
+It isn't relevant,It isn't correct,It's unsafe,It's Biased
+location_in_app = ""AI Tutor""/""My Course""
+channel_flow = ""HW help""
+channel_section = ""Higher Education""
+initiate_point
+channel_type
+user_signed_in= true
+search_term =  
+user_input =  the value from the input on the dialogue
+user_entitlement_mix";;;CHAN-13061;;;;;;;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario;[iOS] AI Tutor: send PLA id 782 when closing the chat history;;;[iOS] AI Tutor: send PLA id 782 when closing the chat history;High;"Precondition:
+1) Precondition only for Demo app: Enable AI Tutor feature in AB settings
+1. Launch application and login
+2. Initiate chat bot reply 
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field)
+3. Tap on Close 'X' icon 
+4. Check in tracking tool ""Check in tracking tool ""Select Question Solve Feedback"" PLA event ( PLA id = 782) triggered in step 3
+ 
+ ";"1. Application is launched, user is authorized
+2. AI tutor popup should display
+3. Verify event with following :
+event_action: ""Click Close Chatbot""
+event_category: ""Study Channels""
+event=""studychannelsevent""
+Fields:
+event_label = ""X""
+location_in_app = ""AI Tutor""/""My Course""
+channel_flow = ""HW help""
+channel_section = ""Higher Education""
+initiate_point=""AI Tutor""/""My Course""
+channel_type
+event_value
+subject 
+Topic
+user_signed_in= true
+user_entitlement_mix";"step for initiating of chat history page are missing
+event_value - show me please where you saw this paremeter";Pass/Complete;CHAN-13610,CHAN-13659;;;;;;Pass/Complete;;;;;;;;;;;
+Pearson+ Study_Channel_Scenario;[iOS] AI Tutor: send PLA 606 and 607 when chatting with the bot;;;[iOS] AI Tutor: send PLA 606 and 607 when chatting with the bot;High;"Precondition for Demo app: Enable AI Tutor feature in AB settings
+1. Launch application and login
+2. Initiate chat bot reply with video / practice assets 
+( - Open a High education channel 
+- Click on  AI Tutor tab or My Course tab
+ - click on ""Ask Ai Tutor for help"" field
+ - enter in search field a question which returns some practice assets / some video assets)
+3. Check in tracking tool ""Select ask question"" ( PLA Id = 606 )and ""Generate HW question""( PLA Id = 607) event triggered in step 2
+";"1. Application is launched, user is authorized
+2. Asked question and chatbot reply should displayed
+3. 
+a. ""Select ask question"" event is sent with:
+event_action: ""Select ask question""
+event_category: ""Study Channels""
+
+Fields:
+event_label = ""ask_question""
+location_in_app = ""AI Tutor""
+channel_section = ""Higher Education""
+channel_flow = ""HW Help""
+channel_type, 
+user_signed_in=true
+search_term =  the last prompt user has sent
+initiate_point = ""AI Tutor""/ ""My Course""
+user_entitlement_mix
+subject
+topic";"Where are parameters for ""Generate HW question""( PLA Id = 607) event?";;CHAN-13551,CHAN-13659;;;;;;Pass/Complete;;;;;;;;;;;
